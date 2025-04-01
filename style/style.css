@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+
+
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+
+body{
+    font-size: clamp(16px, 4vw, 24px);
+    background: #3f3f3f;
+    color: #fff;
+ 
+}
+
+section{
+    min-height: 100vh;
+}
+
+header{
+    padding: 2vh 2vw;
+    position: fixed;
+    width: 100%;
+    background: #000;
+    top: 0;
+}
+
+header nav ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+    
+}
+
+header nav ul li{
+    cursor: pointer;
+}
+
+
+.section__hero{
+    background: #2f2f2f;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 10vh 0;
+    grid-gap: 40px;
+}
+
+.section__hero-card{
+    outline: 2px solid #fff;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    flex-direction: column;
+    line-height: 150%;
+    text-align: center;
+    gap: 2vh;
+    position: relative;
+    border-radius: 5px;
+    box-shadow: #000 0px 3px 3px 5px;
+}
+
+
+
+.section__hero-card .auto{
+    width: 100%;
+    border-radius: 5px;
+    filter: drop-shadow(0px 5px 5px #000);
+}
+
+.icon{
+    width: 50px;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+}
+
+
+.section__hero-card button{
+    border: none;
+    background: #2f2f;
+    font-size: clamp(24px, 4vw, 28px);
+    letter-spacing: 1px;
+    padding: 3px 10px;
+    border-radius: 15px;
+    filter: drop-shadow(3px 3px 3px #000);
+    transition: ease .2s ;
+}
+
+.section__hero-card button:hover{
+    filter: drop-shadow(-1px -1px 2px #fff);
+}
+
+.section__hero-card button:active{
+    background: rgb(15, 167, 15);
+}
